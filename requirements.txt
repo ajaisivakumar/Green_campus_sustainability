@@ -1,0 +1,36 @@
+# Core backend — versions match what is installed locally (Python 3.13 compatible)
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.6.1
+sqlalchemy==2.0.36
+alembic==1.14.0
+
+# PostgreSQL driver (for Neon DB)
+psycopg2-binary==2.9.10
+
+# Data processing — numpy 2.2.3 has wheels for Python 3.11, 3.12, 3.13
+pandas==2.2.3
+numpy==2.2.3
+openpyxl==3.1.5
+
+# Machine learning
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# Reporting
+jinja2==3.1.4
+
+# HTTP client - used for Google Gemini API calls (no extra SDK needed)
+httpx==0.28.1
+
+# Utilities
+python-multipart==0.0.19
+aiofiles==24.1.0
+python-dotenv==1.0.1
+rich==13.9.4
+click==8.1.8
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
